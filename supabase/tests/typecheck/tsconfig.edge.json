@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022", "DOM"],
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "npm:@supabase/supabase-js@2": ["../../../node_modules/@supabase/supabase-js"]
+    }
+  },
+  "include": [
+    "./deno-stubs.d.ts",
+    "../../functions/**/*.ts",
+    "../../dashboard-bundles/*.ts"
+  ]
+}

@@ -1,0 +1,16 @@
+# Per-function settings for `supabase functions deploy`.
+#
+# Every function except payment-webhook expects a Supabase session JWT in
+# the Authorization header (verified at the platform gateway AND again inside
+# each function via supabase.auth.getUser() — see _shared/auth.ts). Razorpay
+# calls payment-webhook directly with its own HMAC signature, not a Supabase
+# JWT, so gateway-level JWT verification must be disabled for that one
+# function only — everything else keeps the default (verify_jwt = true).
+[functions.payment-webhook]
+verify_jwt = false
+
+# notifications-dispatch is called by a Database Webhook / scheduler with its own
+# shared secret (x-dispatch-secret header, see the function's header comment),
+# not a user session, so gateway JWT verification is disabled for it too.
+[functions.notifications-dispatch]
+verify_jwt = false

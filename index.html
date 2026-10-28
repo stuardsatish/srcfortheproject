@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>my-sweets</title>
+  <!-- Pre-paint: set theme/mode attributes before React mounts to avoid a
+         flash of the wrong theme. Kept tiny + dependency-free on purpose. -->
+  <script>
+    (function () {
+      try {
+        var raw = localStorage.getItem("app-theme");
+        var saved = raw ? JSON.parse(raw) : {};
+        var theme = saved && saved.theme ? saved.theme : "default";
+        var mode =
+          saved && (saved.mode === "light" || saved.mode === "dark")
+            ? saved.mode
+            : window.matchMedia &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+        var el = document.documentElement;
+        el.setAttribute("data-theme", theme);
+        el.setAttribute("data-mode", mode);
+        el.style.colorScheme = mode;
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "default");
+        document.documentElement.setAttribute("data-mode", "light");
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

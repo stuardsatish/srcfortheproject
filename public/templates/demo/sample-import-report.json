@@ -1,0 +1,147 @@
+{
+  "header": {
+    "File": "products-demo.xlsx",
+    "SHA-256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "Started": "2026-10-17 15:30:00 IST",
+    "Finished": "2026-10-17 15:30:42 IST",
+    "Operator": "admin@example.com",
+    "Batch": "sample-batch",
+    "Rows read": 12,
+    "Products": 6,
+    "Variants": 6,
+    "Images": 13,
+    "Created": 12,
+    "Unchanged": 0,
+    "Errors": 0,
+    "Warnings": 1,
+    "Outcome": "Imported"
+  },
+  "counts": {
+    "created": 12,
+    "unchanged": 0,
+    "error": 0,
+    "skipped": 0
+  },
+  "rows": [
+    {
+      "Row": 2,
+      "Import ID": "SHIRT-001",
+      "Type": "SINGLE",
+      "Result": "created",
+      "Product ID": "prod_sample01",
+      "Variant ID": "",
+      "Images saved": "",
+      "Messages": ""
+    },
+    {
+      "Row": 3,
+      "Import ID": "SHIRT-002",
+      "Type": "PARENT",
+      "Result": "created",
+      "Product ID": "prod_sample02",
+      "Variant ID": "",
+      "Images saved": "",
+      "Messages": ""
+    },
+    {
+      "Row": 4,
+      "Import ID": "SHIRT-002-PINK",
+      "Type": "VARIANT",
+      "Result": "created",
+      "Product ID": "prod_sample02",
+      "Variant ID": "var_sample021",
+      "Images saved": "",
+      "Messages": ""
+    },
+    {
+      "Row": 5,
+      "Import ID": "SHIRT-002-WHITE",
+      "Type": "VARIANT",
+      "Result": "created",
+      "Product ID": "prod_sample02",
+      "Variant ID": "var_sample022",
+      "Images saved": "",
+      "Messages": ""
+    },
+    {
+      "Row": 6,
+      "Import ID": "SHIRT-002-VIOLET",
+      "Type": "VARIANT",
+      "Result": "created",
+      "Product ID": "prod_sample02",
+      "Variant ID": "var_sample023",
+      "Images saved": "",
+      "Messages": ""
+    },
+    {
+      "Row": 7,
+      "Import ID": "SHOE-001",
+      "Type": "SINGLE",
+      "Result": "created",
+      "Product ID": "prod_sample03",
+      "Variant ID": "",
+      "Images saved": "",
+      "Messages": ""
+    },
+    {
+      "Row": 8,
+      "Import ID": "CUSTOM-001",
+      "Type": "SINGLE",
+      "Result": "created",
+      "Product ID": "prod_sample04",
+      "Variant ID": "",
+      "Images saved": "",
+      "Messages": ""
+    },
+    {
+      "Row": 9,
+      "Import ID": "HOODIE-001",
+      "Type": "PARENT",
+      "Result": "created",
+      "Product ID": "prod_sample05",
+      "Variant ID": "",
+      "Images saved": "",
+      "Messages": ""
+    },
+    {
+      "Row": 10,
+      "Import ID": "HOODIE-001-RED-M",
+      "Type": "VARIANT",
+      "Result": "created",
+      "Product ID": "prod_sample05",
+      "Variant ID": "var_sample051",
+      "Images saved": "",
+      "Messages": ""
+    },
+    {
+      "Row": 11,
+      "Import ID": "HOODIE-001-RED-L",
+      "Type": "VARIANT",
+      "Result": "created",
+      "Product ID": "prod_sample05",
+      "Variant ID": "var_sample052",
+      "Images saved": "",
+      "Messages": ""
+    },
+    {
+      "Row": 12,
+      "Import ID": "HOODIE-001-BLUE-M",
+      "Type": "VARIANT",
+      "Result": "created",
+      "Product ID": "prod_sample05",
+      "Variant ID": "var_sample053",
+      "Images saved": "",
+      "Messages": ""
+    },
+    {
+      "Row": 13,
+      "Import ID": "GIFT-001",
+      "Type": "SINGLE",
+      "Result": "created",
+      "Product ID": "prod_sample06",
+      "Variant ID": "",
+      "Images saved": "",
+      "Messages": "W005: DRAFT products are currently still visible to customers (known issue P-8) — keep this in mind before importing."
+    }
+  ]
+}

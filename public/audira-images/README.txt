@@ -1,0 +1,1 @@
+Place your images here: logo.png, brown.png, green.png, black.png, fb.png, insta.png, video.mp4
